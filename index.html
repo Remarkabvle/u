@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Cards</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="product-card">
+                <img src="https://www.logotypes101.com/logos/48/F723ADF988615AB73CAD9CE4EC07D775/IMG186.png" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-name">Img</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="product-info">
+                        <p class="product-price">$20</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://www.logotypes101.com/logos/48/F723ADF988615AB73CAD9CE4EC07D775/IMG186.png" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h3 class="product-name">Img</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="product-info">
+                        <p class="product-price">$30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close modal__btn-close">&times;</span>
+                <form id="productForm">
+                    <div class="form-group">
+                        <label for="productName">Product Name:</label>
+                        <input value="BMW" type="text" id="productName" name="productName" required>
+                    </div>
+            <div class="form-group">
+                <label for="productDesc">Description:</label>
+                <textarea  id="productDesc"  name="productDesc" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Price:</label>
+                <input type="text" value="$120000" id="productPrice" name="productPrice" required>
+            </div>
+            <button type="submit" id="submitBtn">Add Product</button>
+        </form>
+    </div>
+</div>
+<button class="btn">Add Card</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>
